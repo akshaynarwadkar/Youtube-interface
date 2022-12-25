@@ -21,15 +21,26 @@ html,body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 20px;
     padding: 20px;
     margin-right: 20px;
+
+}
+
+.navigation .center {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.navigation .center p{
+    font-size: 10px;
 }
 
 .content{
     display: flex;
     flex-direction: column;
-    /* width: 93%; */
+
 }
 
 .content .top{
@@ -65,14 +76,16 @@ html,body{
 .search-icon img{
     background-color: #ebebeb;
     /* padding: 2px; */
-    border: 1px solid black;
-    width: 30px;
-    height: 30px;
+    /* border: 1px solid black; */
+    width: 28px;
+    height: 28px;
 
 }
 
 .search-bar input{
     font-size: 23px;
+    min-width: 600px;
+    border: 0.5px solid #ccc;
 }
 
 .mic{
@@ -91,6 +104,7 @@ html,body{
     display: flex;
     justify-content: space-between;
     gap: 25px;
+    margin-top: -2px;
 }
 
 .filter{
@@ -127,13 +141,13 @@ font-size: 14px;
     background-color: #ebebeb;
     display: flex;
     gap: 20px;
-    padding: 15px;
+    padding: 10px;
     flex-wrap: wrap;
 }
 
 .thumbnail{
     height: 36vh;
-    width: 21vw;
+    width: 20vw;
 }
 
 .thumbnail-img img{
@@ -165,7 +179,10 @@ font-size: 14px;
 
 @media (max-width:786px){
 
-
+    .navigation{
+        padding-left: 1px;
+        margin-right: 20px;
+    }
 
     .thumbnail{
         min-height: 200px;
@@ -176,5 +193,11 @@ font-size: 14px;
         height: 100%;
         width: 100%;
     }
+
+    .search-bar input{
+        font-size: 23px;
+        min-width: 300px;
+    }
+    
 
 }   
