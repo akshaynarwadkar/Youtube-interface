@@ -23,12 +23,13 @@ html,body{
     align-items: flex-start;
     gap: 20px;
     padding: 20px;
+    margin-right: 20px;
 }
 
 .content{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    /* width: 93%; */
 }
 
 .content .top{
@@ -36,6 +37,8 @@ html,body{
     justify-content: space-between;
     padding: 20px;
     gap: 20px;
+    max-width: 1200px;
+    /* margin: 0 auto; */
 }
 
 .content .top .yt-logo img{
@@ -123,8 +126,8 @@ font-size: 14px;
 .thumbnails{
     background-color: #ebebeb;
     display: flex;
-    gap: 10px;
-    padding: 10px;
+    gap: 20px;
+    padding: 15px;
     flex-wrap: wrap;
 }
 
@@ -136,6 +139,7 @@ font-size: 14px;
 .thumbnail-img img{
     height: 24vh;
     width: 21vw;
+
 }
 
 .flex1{
@@ -158,3 +162,19 @@ font-size: 14px;
     white-space: initial;
     font-size: 13px;
 }
+
+@media (max-width:786px){
+
+
+
+    .thumbnail{
+        min-height: 200px;
+        min-width: 200px;
+    }
+
+    .thumbnail-img img{
+        height: 100%;
+        width: 100%;
+    }
+
+}   
