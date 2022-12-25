@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1.1;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.front-page{
+    display: flex;
+}
+
+.navigation{
+    width: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.content .top{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+.content .top .yt-logo img{
+    width: 90px;
+    height: 25px;
+}
+
+.search{
+    display: flex;
+    gap: 0px;
+}
+
+.search .search-bar{
+    padding-top: 2px;
+
+}
+
+.search-icon{
+    padding-top: 2px;
+}
+
+
+
+.search-icon img{
+    background-color: #ebebeb;
+    /* padding: 2px; */
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+
+}
+
+.search-bar input{
+    font-size: 23px;
+}
+
+.mic{
+    margin-left: 16px;
+}
+
+.mic img{
+    background-color: #ebebeb;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+
+.avatar{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.filter{
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+}
+
+.filter div{
+    border: 1px solid black;
+    border-radius: 40%;
+    height: 26px;
+    width: 54px;
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+.filter p{
+font-size: 14px;
+    padding: 2px;
+}
+
+.filter .select{
+    background-color: black;
+    color: white;
+}
+
+.filter .unselect{
+    background-color: #ebebeb;
+}
+
+
+.thumbnails{
+    background-color: #ebebeb;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.thumbnail{
+    height: 36vh;
+    width: 21vw;
+}
+
+.thumbnail-img img{
+    height: 24vh;
+    width: 21vw;
+}
+
+.flex1{
+    display: flex;
+    gap: 5px;
+}
+
+.flex1-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.flex1-content h4{
+    white-space: initial;
+    font-size: 14px;
+}
+
+.flex1-content p{
+    white-space: initial;
+    font-size: 13px;
+}
